@@ -1,0 +1,23 @@
+{
+  "name": "suihoneypot",
+  "version": "0.0.1",
+  "description": "Detect HoneyPot SCAM on Sui",
+  "main": "dist/index.ts",
+  "types": "dist/index.d.ts",
+  "author": "SuiSec",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@mysten/sui": "^1.11.0"
+  }
+}
