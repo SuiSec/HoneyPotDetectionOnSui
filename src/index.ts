@@ -20,11 +20,6 @@ const defaultOptions = {
 	showDisplay: false,
 };
 
-interface SuiParsedData {
-    dataType: string;
-    disassembled?: { [key: string]: string };
-}
-
 export const isHoneyPot = async (ca: string): Promise<boolean> => {
     let isHoneyPot = false;
 
@@ -39,8 +34,11 @@ export const isHoneyPot = async (ca: string): Promise<boolean> => {
     const res = await client.getObject({ id: package_id, options: defaultOptions });
     const bytecode = 'disassembled' in res.data!.content! ? res.data!.content.disassembled[module_id] : null;
     
-    if (bytecode && typeof bytecode === 'string' && bytecode.includes('deny_list')) {
-        isHoneyPot = true;
+    if (bytecode && typeof bytecode === 'string') {
+        const regex = new RegExp(denyFeat.join('|'), 'i');
+        if (regex.test(bytecode)) {
+            isHoneyPot = true;
+        }
     }
 
     return isHoneyPot
