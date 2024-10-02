@@ -10,7 +10,7 @@ const wl: string[] = [
     '0x2053d08c1e2bd02791056171aab0fd12bd7cd7efad2ab8f6b9c8902f14df2ff2::ausd::AUSD'  // Agora USD
 ];
 
-const denyFeat: string[] = ['deny_list', 'DenyList', 'DenyCap'];
+const denyFeat: string[] = ['deny_list', 'DenyList', 'DenyCap', 'create_regulated_currency'];
 
 const defaultOptions = {
 	showType: true,
