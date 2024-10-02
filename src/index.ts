@@ -6,7 +6,8 @@ const client = new SuiClient({
 });
 
 const wl: string[] = [
-    '0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC' // Circle Native USDC
+    '0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC', // Circle Native USDC
+    '0x357b8be077a7c93278262c6f53e887250772c26fb28b5e16a8cddf2bec404816::ausd::AUSD'  // Agora USD
 ];
 
 const denyFeat: string[] = ['deny_list', 'DenyList', 'DenyCap'];
