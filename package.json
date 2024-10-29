@@ -1,6 +1,6 @@
 {
   "name": "suihoneypot",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Detect HoneyPot SCAM on Sui",
   "main": "dist/index.ts",
   "types": "dist/index.d.ts",

@@ -6,8 +6,9 @@ const client = new SuiClient({
 });
 
 const wl: string[] = [
-    '0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC', // Circle Native USDC
-    '0x2053d08c1e2bd02791056171aab0fd12bd7cd7efad2ab8f6b9c8902f14df2ff2::ausd::AUSD'  // Agora USD
+    '0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC',  // Circle Native USDC
+    '0x2053d08c1e2bd02791056171aab0fd12bd7cd7efad2ab8f6b9c8902f14df2ff2::ausd::AUSD',  // Agora USD
+    '0x960b531667636f39e85867775f52f6b1f220a058c4de786905bdf761e06a56bb::usdy::USDY'   // Ondo USDY
 ];
 
 const denyFeat: string[] = ['deny_list', 'DenyList', 'DenyCap', 'create_regulated_currency'];
